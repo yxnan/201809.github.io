@@ -1,0 +1,395 @@
+/* scrollbar style on chrome & opera */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.274);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.459);
+}
+
+/* scrollbar for firefox */
+html {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  }
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* custom bulma */
+/* custom post content */
+.content blockquote:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content p:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child), .content ul:not(:last-child) {
+    margin-top: 1em;
+}
+
+/* for box */
+.has-shadow-hover {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.has-shadow-hover:hover {
+    box-shadow: 0 0px 10px #0000001c;
+}
+
+.has-box-shadow {
+  box-shadow: 0 0px 10px #0000001c;
+}
+
+@media screen and (min-width: 768px) {
+.has-box-shadow {
+    border-radius: 10px;
+  }
+}
+
+/* for navbar */
+.has-bg-shadow {
+  box-shadow: 0 0px 10px #0000001c;
+}
+
+/* button */
+.has-transparent-bg {
+  background-color: transparent;
+  border: none;
+}
+.has-transparent-bg:hover {
+    background-color: #e8e8e8
+  }
+
+/* Background for hero */
+.has-bg-img { background: url('https://bierpinter.com/wp-content/uploads/2018/05/website-design-background-1.jpg')center top; background-size:cover; }
+
+/* index */
+.main .work a .caption{
+    transition:all .1s linear;
+    -webkit-transition:all .1s linear;
+    -moz-transition:all .1s linear;
+    -o-transition:all .1s linear;
+}
+.main .work .caption{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    opacity: 0;
+}
+.main .work a:hover .caption{
+    opacity: 0.8;
+}
+.work .caption .work_title{
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.main .work .caption h1{
+    position: relative;
+    display: inline-block;
+    max-width: 90%;
+    padding: 20px 0;
+    z-index: 77;
+    color: #454545;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: .5px;
+    border-bottom: 1px solid #bfbbbb;
+    border-top: 1px solid #bfbbbb;
+}
+
+@media screen and (max-width: 900px) {
+.main .work a:hover .caption {
+  display: none;
+  }
+}
+
+/* column scroll*/
+.has-scroll {
+    height: 70vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+@media screen and (max-width: 768px) {
+.has-scroll {
+    height: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.is-gapless-mobile {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.has-margin-0 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+.has-rounded-corner {
+    border-radius: 10px;
+  }
+}
+
+/* content image */
+@media screen and (min-width: 768px) {
+.content img {
+    border-radius: 10px;
+  }
+}
+
+/* title-padding */
+.has-title-padding {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+.has-title-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 9px;
+  }
+}
+
+/* content page padding */
+.has-content-padding {
+  padding: 2rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+.has-content-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+/* centered image */
+.has-image-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* image profile_pic */
+
+#profile_pic {
+  bottom: 4rem;
+}
+
+@media screen and (min-width: 700px) {
+  .content-box {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+}
+
+code {
+    font-size: 15px;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    background-color: #f7f8f8;
+    padding: 0 10px;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  background: white;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+  padding: 2px;
+}
+
+@media screen and (min-width: 768px) {
+.grid-sizer,
+.grid-item {
+  padding: 5px;
+  }
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+}
+
+
+/* Theme: Solarized - Github
+ * More theme here: http://softwaremaniacs.org/media/soft/highlight/test.html
+ */
+.content pre,
+.content .highlight {
+  background: #2d2d2d;
+  margin: 0 -12px;
+  padding: 15px 12px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px 0;
+  overflow: auto;
+  color: #ccc;
+  line-height: 25.6px;
+  border-radius: 10px;
+  margin: 1px 10px 1px 10px;
+  border: 3px solid #2d2d2d;
+}
+.content .highlight .gutter pre,
+.content .gist .gist-file .gist-data .line-numbers {
+  color: #666;
+  font-size: 0.85em;
+}
+.content pre,
+.content code {
+  font-family: 'Raleway', sans-serif;
+}
+.content code {
+  background: #eee;
+  text-shadow: 0 1px #fff;
+  padding: 0 0.5em;
+}
+.content pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
+}
+.content .highlight pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.content .highlight table {
+  margin: 0;
+  width: auto;
+}
+.content .highlight td {
+  border: none;
+  padding: 0;
+}
+.content .highlight figcaption {
+  font-size: 0.85em;
+  color: #999;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.content .highlight figcaption:before,
+.content .highlight figcaption:after {
+  content: "";
+  display: table;
+}
+.content .highlight figcaption:after {
+  clear: both;
+}
+.content .highlight figcaption a {
+  float: right;
+}
+.content .highlight .gutter pre {
+  text-align: right;
+  padding-right: 20px;
+}
+
+pre .comment,
+pre .title {
+  color: #999;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #f2777a;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #f99157;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #9c9;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #84be6a;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #69c;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #c9c;
+}
