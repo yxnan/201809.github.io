@@ -160,6 +160,7 @@ h6, .h6 {
 
 @media screen and (min-width: 768px) {
 .has-rounded-corner {
+    object-fit: cover;
     border-radius: 10px;
   }
 }
